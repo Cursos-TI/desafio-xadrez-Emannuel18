@@ -1,32 +1,60 @@
 #include <stdio.h>
-
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // Constantes para os movimentos das peças
+    const int TORRE = 5;
+    const int BISPO = 5;
+    const int RAINHA = 8;
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    // Variáveis para os movimentos
+    int movTorre = 0, movBispo = 0, movRainha = 0;
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    
+    // exibição dos movimentos do bispo
+    printf("Movimentos do bispo. \n");
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    // lógica para os movimentos
+    do
+    {
+        printf("Cima, direita. \n");
+        movBispo++;
+    } while (movBispo < BISPO);
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    printf("Bispo andou 5 casas na diagonal para cima e direita. \n");
 
+    printf("\n");
+
+
+
+    // exibição dos movimentos da torre
+    printf("Movimentos da torre. \n");
+
+    // lógica para os movimentos
+    while (movTorre < TORRE)
+    {
+        printf("Direita. \n");
+        movTorre++;
+    }
+
+    printf("Torre andou 5 casas para a direita. \n");
+
+    printf("\n");
+
+
+
+    // exibição dos movimentos da rainha
+    printf("Movimentos da rainha. \n");
+
+    // lógica para os movimentos
+    for (movRainha = 0; movRainha < RAINHA; movRainha++)
+    {
+        printf("Esquerda. \n");
+    }
+
+    printf("Rainha andou 8 casas para a esquerda. \n");
+    
+    printf("\n");
+    
     return 0;
 }
